@@ -6,7 +6,7 @@ Legend says that Debussy was inspired by Gamelan music. Is it a pure marketing m
 
 ## Overview
 
-This project investigates whether Claude Debussy's compositions show measurable tonal similarities to Javanese Gamelan music. It does so by computing **Harmonic Pitch Class Profiles (HPCPs)**, that display the relative energy of each pitch class in a recording — and then comparing these profiles across three groups:
+This project investigates whether Claude Debussy's compositions show measurable tonal similarities to Javanese Gamelan music. It does so by computing **Harmonic Pitch Class Profiles (HPCPs)**, that display the relative energy of each pitch class in a recording and then comparing these profiles across three groups:
 
 - **Gamelan recordings** (reference corpus)
 - **Pre-Gamelan Debussy works** (composed before his 1889 exposure)
