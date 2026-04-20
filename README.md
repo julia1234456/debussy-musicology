@@ -66,9 +66,9 @@ The high-resolution setting is key: at 12 bins, Gamelan's pentatonic/heptatonic 
 
 Before running the main analysis, the HPCP method is validated on three controlled signals:
 
-- **A440** — verifies that the dominant peak lands on the correct pitch class.
-- **A432** — verifies that tuning correction maps an off-tune A to the same pitch class as A440.
-- **Chromatic scale** — verifies that all 12 pitch classes contribute equally when all semitones are played.
+- **A440**,  verifies that the dominant peak lands on the correct pitch class.
+- **A432**, verifies that tuning correction maps an off-tune A to the same pitch class as A440.
+- **Chromatic scale**, verifies that all 12 pitch classes contribute equally when all semitones are played.
 
 ### 4. Statistical Comparison (`scripts/statistics.py`)
 
@@ -86,21 +86,21 @@ Results are displayed as annotated heatmaps. Cells can be filtered to show only 
 
 The notebook proceeds from individual pieces to dataset-wide comparisons:
 
-1. **Single-piece exploration** — visual comparison of *Pagodes*, *Sirènes*, *Nocturne*, and individual Gamelan pieces.
-2. **Pairwise statistics** — 3×4 matrix comparing Debussy pieces against each Gamelan recording.
-3. **Full dataset** — pre-Gamelan vs. Gamelan corpus, and post-Gamelan vs. Gamelan corpus.
-4. **Representative aggregation** — mean HPCP vectors for each category are computed and compared, giving a single summary correlation between groups.
+1. **Single-piece exploration**, visual comparison of *Pagodes*, *Sirènes*, *Nocturne*, and individual Gamelan pieces.
+2. **Pairwise statistics**, matrix comparing Debussy pieces against each Gamelan recording.
+3. **Full dataset** , pre-Gamelan vs. Gamelan corpus, and post-Gamelan vs. Gamelan corpus.
+4. **Representative aggregation**, mean HPCP vectors for each category are computed and compared, giving a single summary correlation between groups.
 
 ---
 
 ## Key Findings
 
-- At **12-bin resolution**, Gamelan pieces appear indistinguishable from Western music — their pentatonic scale is invisible because its pitches fall between Western semitones.
+- At **12-bin resolution**, Gamelan pieces appear indistinguishable from Western music: their pentatonic scale is invisible because its pitches fall between Western semitones.
 - At **120-bin resolution**, Gamelan pieces reveal clearly distinct, sparse peak structures (typically 5 peaks), while Western Debussy works show 12 evenly distributed peaks.
-- **Debussy's *Pagodes*** shows a notably sparse pitch distribution reminiscent of a hexatonic scale, aligning more closely with Gamelan's reduced pitch set than with the *Nocturne*.
-- **Debussy's *Sirènes*** is more ambiguous: it retains 12 pitch classes but shows reduced tonal hierarchy — no strong tonic/dominant emphasis — which may reflect Gamelan influence at the structural rather than scalar level.
+- **Debussy's *Pagodes*** shows a notably sparse pitch distribution reminiscent of a hexatonic scale, aligning more closely with Gamelan's reduced pitch set.
+- **Debussy's *Sirènes*** is more ambiguous: it retains 12 pitch classes but shows reduced tonal hierarchy, no strong tonic/dominant emphasis, which may reflect Gamelan influence at the structural rather than scalar level.
 - The Pearson/Spearman matrices between Gamelan-inspired pieces and Gamelan recordings show **positive correlations for *Pagodes* and *Sirènes***, though the picture is complicated by internal diversity within the Gamelan corpus itself.
-- The aggregated representative comparison (mean HPCP per group) provides the clearest summary: post-Gamelan Debussy is measurably closer to the Gamelan profile than pre-Gamelan Debussy.
+
 
 ---
 
